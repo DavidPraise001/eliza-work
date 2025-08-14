@@ -1,0 +1,37 @@
+{
+  "name": "eliza-quotes-plugin",
+  "version": "1.0.0",
+  "description": "A simple ElizaOS plugin that fetches inspirational quotes",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "node dist/test.js"
+  },
+  "keywords": [
+    "elizaos-plugin",
+    "eliza-plugin",
+    "quotes",
+    "ai",
+    "chatbot"
+  ],
+  "author": "ElizaOS Plugin Developer",
+  "license": "MIT",
+  "dependencies": {
+    "@elizaos/core": "^0.1.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "agentConfig": {
+    "actions": ["GET_QUOTE"],
+    "providers": [],
+    "evaluators": [],
+    "models": ["gpt-4", "gpt-3.5-turbo", "claude-3"],
+    "services": []
+  }
+}
